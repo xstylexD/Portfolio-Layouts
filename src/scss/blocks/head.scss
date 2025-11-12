@@ -1,0 +1,88 @@
+@use "/src/scss/base/variables.scss" as *;
+
+.head {
+    width: 100vw;
+    height: 800px;
+    background: url("/src/img/bacground.jpg") no-repeat center / cover;
+    position: relative;
+
+    &__social {
+        top: 226px;
+        left: 50px;
+        position: absolute;
+        // padding: 226px 0 0 50px;
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        writing-mode: sideways-lr;
+        color: $white-color;
+        align-items: center;
+
+        &-line {
+            height: 70px;
+            width: 2px;
+            background-color: $white-color;
+            display: block;
+        }
+
+        &-text {
+            color: $white-color;
+            min-height: 148px;
+        }
+    }
+
+    &__links {
+        text-decoration: none;
+        color: $white-color;
+        width: 20px;
+        height: 20px;
+        font-size: 19px;
+    }
+
+    &__info {
+        padding-top: 206px;
+        width: 530px;
+
+    }
+
+    &__subtitle {
+        position: relative;
+        z-index: 1;
+        display: block;
+        color: $white-color;
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: -5px;
+            left: -10px;
+            width: 36px;
+            height: 36px;
+            border-radius: 100%;
+            background-color: $yellow-color;
+            z-index: -1;
+        }
+    }
+
+    &__title {
+        margin-top: 10px;
+        color: $white-color;
+
+    }
+
+    &__btn {
+        margin-top: 37px;
+    }
+
+
+
+    &__burger {
+        font-size: 34px;
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        color: $white-color;
+        cursor: pointer;
+        display: block;
+    }
+}

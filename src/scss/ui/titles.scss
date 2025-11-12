@@ -1,0 +1,32 @@
+@use "/src/scss/base/mixins.scss" as *;
+@use "/src/scss/base/variables.scss" as *;
+
+.title-h3 {
+    @include title;
+    font-size: 16px;
+}
+
+.title-h1 {
+    @include title;
+    line-height: 60px;
+    font-size: 48px;
+}
+
+.title-h2 {
+    @include title;
+    color: $dark-color;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.title-h4 {
+    @include title;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 0%;
+    text-align: left;
+}

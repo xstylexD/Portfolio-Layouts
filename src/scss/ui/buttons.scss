@@ -1,0 +1,13 @@
+@use "/src/scss/base/mixins.scss" as *;
+@use "/src/scss/base/variables.scss" as *;
+
+.btn-default {
+    @include button;
+    background-color: transparent;
+}
+
+
+.btn-default-active {
+    @include button;
+    background-color: $yellow-color;
+}
