@@ -1,6 +1,7 @@
 @use "/src/scss/base/variables.scss" as *;
 
 .about {
+    width: 100%;
     padding-top: 120px;
     background-color: $white-color;
 
@@ -70,6 +71,7 @@
         position: relative;
         width: 25px;
         height: 23.45px;
+        z-index: 1;
 
         &::before {
             content: "";
