@@ -1,0 +1,116 @@
+@use "/src/scss/base/variables.scss" as *;
+
+.career {
+    padding-top: 120px;
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    &__title {
+        margin-top: 6px;
+    }
+
+    &__cards-wrapper {
+        display: flex;
+        gap: 186px;
+    }
+
+    &__experience {
+        margin-left: -18px;
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: 0%;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            border-radius: 100%;
+            background-color: $yellow-color;
+            z-index: 2;
+            top: 7.5px;
+            left: -32.5px;
+        }
+    }
+
+    &__cards {
+        margin-top: 85px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__card {
+        margin-top: 45px;
+        width: 375px;
+    }
+
+    &__decoration {
+        position: relative;
+        width: 100%;
+
+        &::before {
+            content: "";
+            position: absolute;
+            height: 169px;
+            width: 1px;
+            left: -43.5px;
+            top: -54px;
+            background-color: $dark-color;
+        }
+    }
+
+    &__icon {
+        margin-top: 14px;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 42px;
+            height: 1px;
+            background-color: $dark-color;
+            top: 2px;
+            left: -43px;
+            z-index: -2;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: -15px;
+            left: -15px;
+            width: 36px;
+            height: 36px;
+            border-radius: 100%;
+            background-color: $yellow-color;
+            z-index: -1;
+        }
+
+
+    }
+
+    &__card-title {
+        display: flex;
+        gap: 20px;
+    }
+
+    &__place-desc {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__desc {
+        margin-top: 12px;
+        color: $dark-color;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 18px;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+}

@@ -1,0 +1,99 @@
+@use "/src/scss/base/variables.scss" as *;
+
+.skills {
+    background-color: $white-color;
+    padding-top: 120px;
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    &__cards {
+        margin-top: 85px;
+        display: flex;
+        gap: 13px;
+        flex-wrap: wrap;
+    }
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        width: 270px;
+        height: 270px;
+        border: 1px solid $dark-color;
+        padding: 30px;
+    }
+
+    &__card-title {
+        margin-top: 20px;
+    }
+
+    &__desc {
+        margin-top: 15px;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 18px;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+
+    &__progress {
+        margin-top: 128px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        row-gap: 38px;
+    }
+
+    &__item {
+        width: 350px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__name {
+        position: relative;
+        z-index: 1;
+        color: $dark-color;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 21px;
+        letter-spacing: 0%;
+        text-align: left;
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 36px;
+            height: 36px;
+            background-color: $yellow-color;
+            border-radius: 100%;
+            z-index: -1;
+            top: -50%;
+            left: -10%;
+            transform: translate(0%, 5%)
+        }
+    }
+
+    &__bar {
+        margin-top: 27px;
+        width: 350px;
+        height: 14px;
+        border-radius: 4px;
+        background-color: $grey-color;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            background-color: $yellow-color;
+            width: 85%;
+            height: 100%;
+            border-radius: 4px;
+        }
+    }
+}

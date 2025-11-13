@@ -1,7 +1,8 @@
 @use "/src/scss/base/variables.scss" as *;
 
 .about {
-    margin-top: 120px;
+    padding-top: 120px;
+    background-color: $white-color;
 
     &__wrapper {
         display: flex;

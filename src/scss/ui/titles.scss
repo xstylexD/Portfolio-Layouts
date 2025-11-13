@@ -1,10 +1,6 @@
 @use "/src/scss/base/mixins.scss" as *;
 @use "/src/scss/base/variables.scss" as *;
 
-.title-h3 {
-    @include title;
-    font-size: 16px;
-}
 
 .title-h1 {
     @include title;
@@ -22,6 +18,12 @@
     text-align: left;
 }
 
+.title-h3 {
+    @include title;
+    font-size: 16px;
+}
+
+
 .title-h4 {
     @include title;
     font-size: 14px;
@@ -29,4 +31,48 @@
     line-height: 21px;
     letter-spacing: 0%;
     text-align: left;
+}
+
+.title-h2-decoration {
+    @include title;
+    color: $dark-color;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: 0%;
+    text-align: left;
+    position: relative;
+    display: block;
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 60px;
+        height: 2px;
+        background-color: $yellow-color;
+        top: 140%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.title-h3-decoration {
+    @include title;
+    font-size: 16px;
+    position: relative;
+    display: block;
+    z-index: 1;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 36px;
+        height: 36px;
+        border-radius: 100%;
+        background-color: $yellow-color;
+        z-index: -1;
+    }
 }
