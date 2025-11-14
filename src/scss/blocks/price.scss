@@ -1,0 +1,67 @@
+@use "/src/scss/base/variables.scss" as *;
+
+.price {
+    padding-top: 66px;
+    background-color: $white-color;
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__cards-wrapper {
+        margin-top: 85px;
+        padding: 0 50px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__cards {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    &__item {
+        width: 340px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    &__title {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    &__title-decoration {
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            border-radius: 100%;
+            background-color: $yellow-color;
+            top: 50%;
+            left: -15%;
+            transform: translate(-50%, -50%);
+
+        }
+    }
+
+    &__info {
+        margin-top: 5px;
+        color: $dark-color;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 18px;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+}
